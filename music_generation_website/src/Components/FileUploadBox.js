@@ -23,7 +23,7 @@ class FileUploadBox extends React.Component {
         formData.append("File", file);
 
         axios
-        .post("http://localhost:5000/", "Hello, testing POSTing text.")
+        .post("http://localhost:8080/", file)
         .then(res => console.log(res.data))
         .catch(error => console.warn(error));
     }

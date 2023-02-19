@@ -11,7 +11,6 @@ class App extends React.Component {
           AI Music Generation
         </header>
         <body className='body'>
-          <FileUploadBox fileType = "MP.3"/>
           <FileUploadBox fileType = "MIDI"/>
         </body>
         <footer className='footer'>

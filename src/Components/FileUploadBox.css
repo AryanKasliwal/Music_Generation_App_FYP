@@ -5,34 +5,49 @@
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
     min-height: 40vh;
     max-height: 40vh;
     text-align: center;
     border: 1px dashed #2d0e42;
+    color: white;
+    padding: 20px;
     border-radius: 5vh;
     max-width: 40vw;
     min-width: 40vw;
-    background-color: #c1c1c1;
+    background-color: #1e1d1d;
+}
+
+.chooseFileBox {
+
+}
+
+.boxHeader{
+    flex: 3;
 }
 
 .uploadButton{
     max-width: 30vw;
     margin-left: 5vw;
     margin-right: 5vw;
-    background-color: #92819d;
+    border-radius: 3vh;
+    background-color: #131313;
+    color: white;
     border: none;
+    flex: 5;
     min-height: 8vh;
 }
 
 .submitButton{
-    background-color: #92819d;
+    background-color: #363770;
     max-width: 10vw;
+    flex: 1;
+    border-radius: 10px;
     min-width: 10vw;
     margin-left: 15vw;
     margin-right: 15vw;
     margin-top: 5vh;
     min-height: 5vh;
+    border: white;
     /* border: none; */
 }

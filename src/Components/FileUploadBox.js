@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap';
 import './FileUploadBox.css';
 import axios from "axios";
-import React, {useState} from 'react';
+import React from 'react';
 
 
 class FileUploadBox extends React.Component {
@@ -35,8 +35,8 @@ class FileUploadBox extends React.Component {
                     Drag and drop your {this.fileType} files anywhere here.
                 </h3>
                 <Button type="button" className='uploadButton'>
-                    <i className="fas_fa-file-upload" />
-                    <input type="file" name="file" onChange={this.onFileChange.bind(this)}/>
+                    {/* <i className="fas_fa-file-upload" /> */}
+                    <input className='chooseFileBox' type="file" name="file" onChange={this.onFileChange.bind(this)}/>
                 </Button>
                 <Button className='submitButton' onClick={this.uploadFile.bind(this)}>
                     Submit

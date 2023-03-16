@@ -1,6 +1,7 @@
 import './App.css';
 import FileUploadBox from './Components/FileUploadBox';
 import React from 'react';
+import Result from './Components/Result'
 
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
         </header>
         <body className='body'>
           <FileUploadBox fileType = "MIDI"/>
+          <Result></Result>
         </body>
         <footer className='footer'>
           This is the Final Year Project by Aryan Girish Kasliwal.

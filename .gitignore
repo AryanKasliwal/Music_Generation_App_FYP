@@ -5,6 +5,7 @@
 /music_generation_website/.pnp
 music_generation_website/.pnp.js
 node_modules
+/node_modules
 # testing
 /coverage
 

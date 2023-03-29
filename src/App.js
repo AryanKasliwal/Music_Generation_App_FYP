@@ -1,7 +1,8 @@
-import './App.css';
+import './Styles/App.css'
 import FileUploadBox from './Components/FileUploadBox';
 import React from 'react';
-import Result from './Components/Result'
+import AudioPlayer from './Components/AudioPlayer';
+import ResultBox from './Components/ResultBox'
 
 
 class App extends React.Component {
@@ -12,8 +13,13 @@ class App extends React.Component {
           AI Music Generation
         </header>
         <body className='body'>
-          <FileUploadBox fileType = "MIDI"/>
-          <Result></Result>
+          <div className='upper-body'>
+            <FileUploadBox fileType = "MIDI"/>
+            <ResultBox></ResultBox>
+          </div>
+          <div className='audio-player'>
+            <AudioPlayer/>
+          </div>
         </body>
         <footer className='footer'>
           This is the Final Year Project by Aryan Girish Kasliwal.

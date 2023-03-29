@@ -1,5 +1,5 @@
 import { Button } from 'react-bootstrap';
-import './FileUploadBox.css';
+import '../Styles/FileUploadBox.css';
 import axios from "axios";
 import React from 'react';
 

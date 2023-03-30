@@ -34,7 +34,7 @@ class FileUploadBox extends React.Component {
                 <h3 className='boxHeader'>
                     Drag and drop your {this.fileType} files anywhere here.
                 </h3>
-                <Button type="button" className='uploadButton'>
+                <Button type="upload_button" className='uploadButton'>
                     {/* <i className="fas_fa-file-upload" /> */}
                     <input className='chooseFileBox' type="file" name="file" onChange={this.onFileChange.bind(this)}/>
                 </Button>

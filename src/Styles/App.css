@@ -2,9 +2,33 @@
   text-align: center;
 }
 
+.model-description {
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 5vh; */
+  /* min-width: 15vw; */
+  /* min-height: 10vh; */
+  /* max-height: 40vh; */
+  text-align: center;
+  border: 1px dashed #2d0e42;
+  color: white;
+  padding: 20px;
+  border-radius: 5vh;
+  /* max-width: 40vw;
+  min-width: 40vw; */
+  background-color: #1e1d1d;
+}
+
+.desc-heading{
+  color: #fffff0;
+  margin-bottom: 1vh;
+  margin-top: 0vh;
+}
+
 .body {
-  min-height: 75vh;
+  min-height: 50vh;
   margin: 0vh;
+  padding-top: 3vh;
   background-color: #363636;
   margin: 0;
 }
@@ -33,7 +57,7 @@
   justify-content: center;
   font-size: calc(30px + 2vmin);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #363770;
+  color: #fffff0;
 }
 
 @keyframes App-logo-spin {

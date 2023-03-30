@@ -11,15 +11,11 @@
     text-align: center;
     border: 1px dashed #2d0e42;
     color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5vh;
     max-width: 40vw;
     min-width: 40vw;
     background-color: #1e1d1d;
-}
-
-.chooseFileBox {
-
 }
 
 .boxHeader{
@@ -49,5 +45,6 @@
     margin-top: 5vh;
     min-height: 5vh;
     border: white;
+    color: #fffff0;
     /* border: none; */
 }

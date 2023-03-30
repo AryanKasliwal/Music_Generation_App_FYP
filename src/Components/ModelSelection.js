@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from "styled-components"
 import "../Styles/ModelSelection.css"
 
@@ -26,27 +26,10 @@ export function Option(props) {
   );
 }
 
-const element = (
-  <React.Fragment>
-    <span>Hello</span>
-    <span>World</span>
-  </React.Fragment>
-);
-
 const DropdownWrapper = styled.form`
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-`;
-
-const StyledButton = styled.input`
-  max-width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  border: solid 2px blue;
-  padding: 0.5rem;
-  border-radius: 1rem;
 `;
 
 const StyledSelect = styled.select`
@@ -58,10 +41,6 @@ const StyledSelect = styled.select`
 
 const StyledOption = styled.option`
   color: ${(props) => (props.selected ? "lightgrey" : "black")};
-`;
-
-const StyledLabel = styled.label`
-  margin-bottom: 1rem;
 `;
 
 export default ModelSelection

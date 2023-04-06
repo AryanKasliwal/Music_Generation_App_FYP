@@ -9,7 +9,8 @@ class FileUploadBox extends React.Component {
         super(props)
         this.fileType = props.fileType
         this.state = {
-            selectedFile: null
+            selectedFile: null,
+            generatedFiles: []
         };
     };
 
@@ -24,12 +25,27 @@ class FileUploadBox extends React.Component {
 
         axios
         .post("http://127.0.0.1:8080/upload", formData)
-        .then(res => this.axiosGet)
+        .then(function (response) {
+            console.log("Get function")
+        },
+        function (response) {
+            console.log("Failed to post correctly")
+            axios
+            .get('http://127.0.0.1:8080/download')
+            .then(res => console.log(res.data))
+            .catch(error => console.warn(error))
+        }).bind(this)
         .catch(error => console.warn(error));
     }
 
+    failedGet(e){
+        console.log("Failed to post correctly")
+        return undefined
+    }
+
     axiosGet(e) {
-        print("Getting files!")
+        console.log("Get function")
+        return undefined
         // axios
         // .get('http://127.0.0.1:8080/download')
         // .then(res => console.log(res.data))

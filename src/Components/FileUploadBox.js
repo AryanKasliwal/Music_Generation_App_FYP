@@ -24,8 +24,16 @@ class FileUploadBox extends React.Component {
 
         axios
         .post("http://127.0.0.1:8080/upload", formData)
-        .then(res => console.log(res.data))
+        .then(res => this.axiosGet)
         .catch(error => console.warn(error));
+    }
+
+    axiosGet(e) {
+        print("Getting files!")
+        // axios
+        // .get('http://127.0.0.1:8080/download')
+        // .then(res => console.log(res.data))
+        // .catch(error => console.warn(error))
     }
   
     render(){

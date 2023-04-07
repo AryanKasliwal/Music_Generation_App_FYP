@@ -40,14 +40,6 @@ function FileUploadBox (props) {
         }
     }
 
-    function axiosGet(e) {
-        console.log("Get function")
-        return undefined
-        // axios
-        // .get('http://127.0.0.1:8080/download')
-        // .then(res => console.log(res.data))
-        // .catch(error => console.warn(error))
-    }
   
     return (
         <section className='fileBox'>
@@ -55,7 +47,6 @@ function FileUploadBox (props) {
                 Drag and drop your MIDI files anywhere here.
             </h3>
             <Button type="upload_button" className='uploadButton'>
-                {/* <i className="fas_fa-file-upload" /> */}
                 <input className='chooseFileBox' type="file" name="file" onChange={onFileChange}/>
             </Button>
             <Button className='submitButton' onClick={uploadFile}>

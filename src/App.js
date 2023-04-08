@@ -39,9 +39,9 @@ function App() {
       <body className='body'>
         <div className='model-description'>
           <h1 className='desc-heading'>{modelDescriptionHeadings[selectedModel]}</h1>
-          <p>
+          {!selectedModel == "" && <p>
             {modelDescriptions[selectedModel]}
-          </p>
+          </p>} 
         </div>
         <div className='upper-body'>
           <FileUploadBox onFileNames={updateFileNames}/>

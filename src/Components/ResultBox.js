@@ -39,11 +39,9 @@ function ResultBox(props){
             )
           }
         </div>
-        {!download_clicked && 
-          <Button className='download-button' onClick={downloadZipFile}>
-              Download
-          </Button>
-        }
+        <Button className='download-button' onClick={downloadZipFile}>
+            Download
+        </Button>
         {download_clicked && 
           <p>The files are being downoaded. Check your downloads folder for a zipped file named Generated_music.zip</p>
         }

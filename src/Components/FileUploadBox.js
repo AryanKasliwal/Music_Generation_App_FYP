@@ -6,8 +6,9 @@ import DialogueBox from './DialogueBox';
 
 function FileUploadBox (props) {
     
-    const [selectedFile, setSelectedFile] = useState(null)
+    const [selectedFile, setSelectedFile] = useState(null);
     const [dialogueOpen, setDialogueOpen] = useState(false);
+    const selectecModel = props.onModelSelected;
 
     const onFileChange = event => {
         setSelectedFile(event.target.files[0])
@@ -23,6 +24,7 @@ function FileUploadBox (props) {
             let file = selectedFile;
             const formData = new FormData();
             formData.append("file", file);
+            formData.append("model", selectecModel);
 
             axios
             .post("http://127.0.0.1:8080/upload", formData)

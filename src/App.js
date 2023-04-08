@@ -18,15 +18,15 @@ function App() {
   }
 
   const modelDescriptionHeadings = {
-    "": "Please select a model above",
-    "RNN": "Capabilities of RNN",
-    "VQ-VAE": "Description of chosen model"
+    "": "Please select a model from above",
+    "RNN": "Recurrent Neural Network",
+    "VQ-VAE": "Vector Quantised-Variational AutoEncoder"
   }
 
   const modelDescriptions = {
     "": "",
-    "RNN": "You have selected a RNN. This model can generate MIDI sequences of various styles of drumming, such as rock, jazz, and funk, and can be trained on any dataset of MIDI drum tracks. This RNN uses long short-term memory (LSTM) RNNs to learn the patterns and structures of drum beats from the training data. It also employs an attention mechanism that allows the model to focus on different parts of the drum track while generating new beats.",
-    "VQ-VAE": ""
+    "RNN": "RNN uses long short-term memory (LSTM) RNNs to learn the patterns and structures of drum beats from the training data and input sequence. It also employs an attention mechanism that allows the model to focus on different parts of the drum track while generating new beats. It can generate MIDI sequences of various styles of drumming, such as rock, jazz, funk, and afro, and can be trained on any dataset of MIDI drum tracks.",
+    "VQ-VAE": "VQ-VAE is a type of variational autoencoder that uses vector quantisation to obtain a discrete latent representation of input sequences. Using the VQ method allows the model to circumvent issues of posterior collapse - where the latents are ignored when they are paired with a powerful autoregressive decoder - typically observed in the VAE framework. Pairing these representations with an autoregressive prior, the model can generate high quality drum tracks in various genres such as rock, jazz, latin, and blues."
   }
   return (
     <div className='App'>
@@ -44,7 +44,7 @@ function App() {
           </p>} 
         </div>
         <div className='upper-body'>
-          <FileUploadBox onFileNames={updateFileNames}/>
+          {!selectedModel == "" && <FileUploadBox onFileNames={updateFileNames} onModelSelected={selectedModel}/>}
           {generatedFileNames.length > 0 && <ResultBox fileNames={generatedFileNames}></ResultBox>}
         </div>
       </body>

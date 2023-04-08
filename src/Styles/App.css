@@ -20,7 +20,7 @@
 }
 
 .body {
-  min-height: 50vh;
+  min-height: 63vh;
   margin: 0vh;
   padding-top: 3vh;
   background-color: #363636;
@@ -38,7 +38,7 @@
 
 .App-header {
   background-color: #131313;
-  min-height: 20vh;
+  min-height: 17vh;
   display: flex;
   flex-direction: column;
   align-items: center;

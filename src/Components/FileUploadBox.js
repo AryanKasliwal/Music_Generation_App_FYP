@@ -22,9 +22,11 @@ function FileUploadBox (props) {
         }
         else {
             let file = selectedFile;
+            let filename = file.name;
             const formData = new FormData();
             formData.append("file", file);
             formData.append("model", selectecModel);
+            formData.append("filename", filename)
 
             axios
             .post("http://127.0.0.1:8080/upload", formData)

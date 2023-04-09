@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "../Styles/ModelSelection.css"
 
 export function ModelSelection(props) {

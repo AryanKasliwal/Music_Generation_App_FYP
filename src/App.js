@@ -39,12 +39,12 @@ function App() {
       <body className='body'>
         <div className='model-description'>
           <h1 className='desc-heading'>{modelDescriptionHeadings[selectedModel]}</h1>
-          {!selectedModel == "" && <p>
+          {selectedModel !== "" && <p>
             {modelDescriptions[selectedModel]}
           </p>} 
         </div>
         <div className='upper-body'>
-          {!selectedModel == "" && <FileUploadBox onFileNames={updateFileNames} onModelSelected={selectedModel}/>}
+          {selectedModel !== "" && <FileUploadBox onFileNames={updateFileNames} onModelSelected={selectedModel}/>}
           {generatedFileNames.length > 0 && <ResultBox fileNames={generatedFileNames} modelName={selectedModel}></ResultBox>}
         </div>
       </body>

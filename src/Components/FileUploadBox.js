@@ -2,12 +2,10 @@ import { Button } from 'react-bootstrap';
 import '../Styles/FileUploadBox.css';
 import axios from "axios";
 import React, { useState } from 'react';
-import DialogueBox from './DialogueBox';
 
 function FileUploadBox (props) {
     
     const [selectedFile, setSelectedFile] = useState(null);
-    const [dialogueOpen, setDialogueOpen] = useState(false);
     const selectecModel = props.onModelSelected;
 
     const onFileChange = event => {
@@ -17,8 +15,6 @@ function FileUploadBox (props) {
     function uploadFile(e) {
         if (selectedFile == null){
             console.log("Testing")
-            setDialogueOpen(true)
-            {dialogueOpen && <DialogueBox onClose={() => setDialogueOpen(false)} />}
         }
         else {
             let file = selectedFile;

@@ -45,7 +45,7 @@ function App() {
         </div>
         <div className='upper-body'>
           {!selectedModel == "" && <FileUploadBox onFileNames={updateFileNames} onModelSelected={selectedModel}/>}
-          {generatedFileNames.length > 0 && <ResultBox fileNames={generatedFileNames}></ResultBox>}
+          {generatedFileNames.length > 0 && <ResultBox fileNames={generatedFileNames} modelName={selectedModel}></ResultBox>}
         </div>
       </body>
       <footer className='footer'>

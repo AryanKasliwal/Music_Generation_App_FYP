@@ -1,0 +1,49 @@
+.download-button {
+    background-color: #363770;
+    max-width: 10vw;
+    margin-top: 1vh;
+    flex: 1;
+    border-radius: 10px;
+    min-width: 10vw;
+    color: #fffff0;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    min-height: 5vh;
+    border: white;
+}
+
+.box {
+    margin-top: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
+    text-align: center;
+    padding: 15px;
+    border: 1px dashed #2d0e42;
+    color: white;
+    border-radius: 5vh;
+    max-width: 40vw;
+    background-color: #1e1d1d;
+}
+
+.result-files{
+    max-width: 30vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 3vh;
+    background-color: #131313;
+    color: white;
+    border: none;
+    flex: 5;
+    min-height: fit-content;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.generated-file-name {
+    color: #ffffc0;
+}

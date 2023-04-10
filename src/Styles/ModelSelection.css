@@ -1,0 +1,14 @@
+.top-section {
+    background-color: #1e1d1d;
+    justify-content: center;
+    padding: 1vh;
+}
+
+.dropdown {
+    background-color: white;
+    margin-top: 1vh;
+}
+
+.dropdown-header {
+    color: #fffff0;
+}

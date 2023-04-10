@@ -2,8 +2,6 @@ import React from 'react'
 import "../Styles/ModelSelection.css"
 
 export function ModelSelection(props) {
-  
-  // const [selectedOption, setSelectedOption] = useState('');
 
   const handleChange = (event) => {
     props.setModelChoice(event.target.value);

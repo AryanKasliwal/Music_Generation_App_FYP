@@ -45,6 +45,7 @@ function FileUploadBox (props) {
         <section className='fileBox'>
             <h3 className='boxHeader'>
                 Drag and drop your MIDI files anywhere here.
+                If you don't have MIDI drum files, you can find them {<a href='https://portland-my.sharepoint.com/:f:/g/personal/akasliwal2-c_my_cityu_edu_hk/EpLqpsnQvuBGuf2VOGbv_tIBrj6dGczdMv3RDptZA_Yf3A?e=itxlzB' target='_blank' rel='noreferrer'>here</a>}
             </h3>
             <Button type="upload_button" className='uploadButton'>
                 <input className='chooseFileBox' type="file" name="file" onChange={onFileChange}/>
